@@ -47,12 +47,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void given_orderNum_when_isMultiple_of_3_and_5_then_return_whizz(){
+    public void given_orderNum_when_isMultiple_of_3_and_5_then_return_FizzBuzz(){
         int orderNumber = 15;
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         String expectedResult = fizzBuzz.countOff(orderNumber);
 
         assertThat(expectedResult).isEqualTo("FizzBuzz");
+    }
+
+    @Test
+    public void given_orderNum_when_isMultiple_of_3_and_7_then_return_FizzWhizz(){
+        int orderNumber = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String expectedResult = fizzBuzz.countOff(orderNumber);
+
+        assertThat(expectedResult).isEqualTo("FizzWhizz");
     }
 }
