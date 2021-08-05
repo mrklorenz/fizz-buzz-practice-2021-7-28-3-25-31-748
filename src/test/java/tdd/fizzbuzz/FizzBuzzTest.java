@@ -65,4 +65,14 @@ public class FizzBuzzTest {
 
         assertThat(expectedResult).isEqualTo("FizzWhizz");
     }
+
+    @Test
+    public void given_orderNum_when_isMultiple_of_5_and_7_then_return_BuzzWhizz(){
+        int orderNumber = 35;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String expectedResult = fizzBuzz.countOff(orderNumber);
+
+        assertThat(expectedResult).isEqualTo("BuzzWhizz");
+    }
 }
