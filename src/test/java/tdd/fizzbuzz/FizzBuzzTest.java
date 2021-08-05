@@ -15,4 +15,14 @@ public class FizzBuzzTest {
 
         assertThat(expectedResult).isEqualTo("1");
     }
+
+    @Test
+    public void given_orderNum_when_isMultiple_of_3_then_return_fizz(){
+        int orderNumber = 3;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String expectedResult = fizzBuzz.countOff(orderNumber);
+
+        assertThat(expectedResult).isEqualTo("Fizz");
+    }
 }
